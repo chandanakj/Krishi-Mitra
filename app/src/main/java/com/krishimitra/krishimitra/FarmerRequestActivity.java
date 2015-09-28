@@ -1,9 +1,14 @@
 package com.krishimitra.krishimitra;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.dexafree.materialList.card.Card;
+import com.dexafree.materialList.card.provider.BasicImageButtonsCardProvider;
+import com.dexafree.materialList.view.MaterialListView;
 
 
 public class FarmerRequestActivity extends ActionBarActivity {
@@ -12,27 +17,20 @@ public class FarmerRequestActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_farmer_request);
+        Intent intent5 =  getIntent();
+
+        MaterialListView mListView = (MaterialListView) findViewById(R.id.material_listview);
+
+        Card card = new Card.Builder(this)
+                .setTag("BASIC_IMAGE_BUTTONS_CARD")
+                .withProvider(BasicImageButtonsCardProvider.class)
+                .setTitle("I'm new")
+                .setDescription("I've been generated on runtime!")
+                .endConfig()
+                .build();
+
+        mListView.add(card);
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_farmer_request, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
