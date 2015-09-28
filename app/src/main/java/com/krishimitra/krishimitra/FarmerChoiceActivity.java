@@ -20,14 +20,16 @@ public class FarmerChoiceActivity extends ActionBarActivity implements View.OnCl
 
         request= (Button) findViewById(R.id.request);
         check= (Button) findViewById(R.id.check);
+
+        request.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.request){
+
             Intent intent5=new Intent(FarmerChoiceActivity.this,FarmerRequestActivity.class);
             startActivity(intent5);
-        }
+
     }
 }
