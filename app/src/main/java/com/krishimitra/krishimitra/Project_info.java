@@ -1,5 +1,6 @@
 package com.krishimitra.krishimitra;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,6 +17,8 @@ public class Project_info extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_info);
+
+        Intent intent3 = getIntent();
       
     }
 
