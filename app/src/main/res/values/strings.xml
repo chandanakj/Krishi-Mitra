@@ -12,4 +12,6 @@
 
     <string name="title_activity_farmer_choice">FarmerChoiceActivity</string>
     <string name="title_activity_farmer_request">FarmerRequestActivity</string>
+
+    <string name="title_activity_card_view">DonorHomeActivity</string>
 </resources>

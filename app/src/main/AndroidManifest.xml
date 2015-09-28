@@ -50,6 +50,10 @@
             android:name=".FarmerRequestActivity"
             android:label="@string/title_activity_farmer_request" >
         </activity>
+        <activity
+            android:name=".CardView"
+            android:label="@string/title_activity_card_view" >
+        </activity>
     </application>
 
 </manifest>
