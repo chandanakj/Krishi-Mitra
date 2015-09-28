@@ -33,6 +33,10 @@
         <activity
             android:name=".FarmerSignInActivity"
             android:label="@string/title_activity_farrmer_sign_in"></activity>
+
+        <activity
+            android:name=".Project_info"
+            android:label="@string/title_activity_project_info"></activity>
     </application>
 
 </manifest>
