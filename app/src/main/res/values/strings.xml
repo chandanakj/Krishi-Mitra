@@ -7,5 +7,4 @@
     <string name="title_activity_donor_choice">DonorChoiceActivity</string>
     <string name="title_activity_sign_in">SignInActivity</string>
     <string name="title_activity_farrmer_sign_in">FarmerSignInActivity</string>
-    <string name="title_activity_card_view">CardView</string>
 </resources>

@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.krishimitra.krishimitra.Project_info">
+
+    <TextView
+        android:id="@+id/tva1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Product Type :"
+        android:textColor="#ff000000"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/tva2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="210dp"
+        android:text="Fertilizer"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tva3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="77dp"
+        android:text="Product Name :"
+        android:textColor="#ff000000"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/tva4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tva3"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="210dp"
+        android:text="Urea"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tva5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tva3"
+        android:layout_marginTop="40dp"
+        android:text="Quantity :"
+        android:textColor="#ff000000"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/tva6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tva3"
+        android:layout_alignRight="@+id/tva3"
+        android:layout_alignTop="@+id/tva5"
+        android:paddingLeft="210dp"
+        android:text="5 kgs"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tva7"
+        style='style="text-decoration: underline;"'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Farmer Info :"
+        android:textColor="#ff38a4a5"
+        android:textSize="23dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tva8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tva7"
+        android:paddingTop="10dp"
+        android:text="Name  :"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tva9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tva7"
+        android:layout_toEndOf="@+id/tva8"
+        android:layout_toRightOf="@+id/tva8"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Ramalinga Swamy"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tva10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="160dp"
+        android:text="Contact  : "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tva11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tva10"
+        android:layout_toEndOf="@+id/tva10"
+        android:layout_toRightOf="@+id/tva10"
+        android:text=" 9806612483"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/donateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/tva5"
+        android:layout_toRightOf="@+id/tva5"
+        android:text="Yes!" />
+
+    <TextView
+        android:id="@+id/tva12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/donateButton"
+        android:layout_toEndOf="@+id/tva8"
+        android:layout_toRightOf="@+id/tva8"
+        android:paddingBottom="10dp"
+        android:text="Are you up for donation?"
+        android:textColor="#ff389e95"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

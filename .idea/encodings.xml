@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="Encoding">
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
+=======
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+</project>
+
+>>>>>>> origin/master
