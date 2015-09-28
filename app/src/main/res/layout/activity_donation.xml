@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="100     X"
+        android:text="10  X"
         android:textSize="25dp"
         android:id="@+id/textView13"
         android:layout_marginTop="69dp"

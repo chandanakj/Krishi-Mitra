@@ -18,25 +18,32 @@
         </activity>
         <activity
             android:name=".SignupActivity"
-            android:label="@string/title_activity_signup"></activity>
+            android:label="@string/title_activity_signup" />
         <activity
             android:name=".DonorChoiceActivity"
             android:label="@string/title_activity_donor_choice"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.krishimitra.krishimitra.MainActivity" />
         </activity>
         <activity
             android:name=".DonorSignInActivity"
-            android:label="@string/title_activity_sign_in"></activity>
+            android:label="@string/title_activity_sign_in" />
         <activity
             android:name=".FarmerSignInActivity"
-            android:label="@string/title_activity_farrmer_sign_in"></activity>
-
+            android:label="@string/title_activity_farrmer_sign_in" />
         <activity
             android:name=".Project_info"
-            android:label="@string/title_activity_project_info"></activity>
+            android:label="@string/title_activity_project_info" />
+        <activity
+            android:name=".FarmerChoiceActivity"
+            android:label="@string/title_activity_farmer_choice" >
+        </activity>
+        <activity
+            android:name=".FarmerRequestActivity"
+            android:label="@string/title_activity_farmer_request" >
+        </activity>
     </application>
 
 </manifest>
