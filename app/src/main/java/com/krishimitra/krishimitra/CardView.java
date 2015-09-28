@@ -1,7 +1,6 @@
 package com.krishimitra.krishimitra;
 
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +12,6 @@ import com.dexafree.materialList.listeners.RecyclerItemClickListener;
 import com.dexafree.materialList.view.MaterialListView;
 
 public class CardView extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +28,8 @@ public class CardView extends AppCompatActivity {
                 .setOnLeftButtonClickListener(new OnButtonClickListener() {
                     @Override
                     public void onButtonClicked(View view, Card card) {
-                        AlertDialog.Builder builder =
-                                new AlertDialog.Builder(CardView.this, R.style.AppCompatAlertDialogStyle);
-                        builder.setTitle("Title");
-                        builder.setMessage("Description");
-                        builder.setPositiveButton("OK", null);//second parameter used for onclicklistener
-                        builder.setNegativeButton("Cancel", null);
-                        builder.show();
+                        Intent intent = new Intent(CardView.this,MainActivity.class);
+                        startActivity(intent);
                     }
                 })
                 .endConfig()
@@ -45,8 +38,6 @@ public class CardView extends AppCompatActivity {
          {
              mListView.add(card);
          }
-
-
 
         mListView.addOnItemTouchListener(new RecyclerItemClickListener.OnItemClickListener() {
 
