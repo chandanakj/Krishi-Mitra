@@ -14,5 +14,5 @@
     <string name="title_activity_farmer_request">FarmerRequestActivity</string>
 
     <string name="title_activity_card_view">DonorHomeActivity</string>
-    <string name="title_activity_dialog">Dialog</string>
+    <string name="title_activity_farmer_check_projects">FarmerCheckProjectsActivity</string>
 </resources>

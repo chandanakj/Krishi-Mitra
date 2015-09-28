@@ -18,7 +18,7 @@
         </activity>
         <activity
             android:name=".SignupActivity"
-            android:label="@string/title_activity_signup"></activity>
+            android:label="@string/title_activity_signup" />
         <activity
             android:name=".DonorChoiceActivity"
             android:label="@string/title_activity_donor_choice"
@@ -29,31 +29,28 @@
         </activity>
         <activity
             android:name=".DonorSignInActivity"
-            android:label="@string/title_activity_sign_in"></activity>
+            android:label="@string/title_activity_sign_in" />
         <activity
             android:name=".FarmerSignInActivity"
-            android:label="@string/title_activity_farrmer_sign_in"></activity>
-
+            android:label="@string/title_activity_farrmer_sign_in" />
         <activity
-            android:name=".Project_info"
-            android:label="@string/title_activity_project_info"></activity>
-
+            android:name=".ProjectInfoActivity"
+            android:label="@string/title_activity_project_info" />
         <activity
-            android:name=".donation"
-            android:label="@string/title_activity_donation"></activity>
-        
+            android:name=".DonationActivity"
+            android:label="@string/title_activity_donation" />
         <activity
             android:name=".FarmerChoiceActivity"
-            android:label="@string/title_activity_farmer_choice" >
-        </activity>
+            android:label="@string/title_activity_farmer_choice" />
         <activity
             android:name=".FarmerRequestActivity"
-            android:label="@string/title_activity_farmer_request" >
-        </activity>
+            android:label="@string/title_activity_farmer_request" />
         <activity
             android:name=".CardView"
-            android:label="@string/title_activity_card_view" >
-        </activity>
+            android:label="@string/title_activity_card_view" />
+        <activity
+            android:name=".FarmerCheckProjectsActivity"
+            android:label="@string/title_activity_farmer_check_projects" />
     </application>
 
 </manifest>
