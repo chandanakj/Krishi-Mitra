@@ -3,40 +3,71 @@ package com.krishimitra.krishimitra;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class donation extends ActionBarActivity {
+
+    Button btnDonateNow;
+    Spinner spinner;
+    TextView donateAmt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donation);
 
+        donateAmt = (TextView) findViewById(R.id.donateAmt);
+
+        addItemsOnSpinner();
+        addListenerOnButton();
+
         Intent intent4 = getIntent();
     }
 
+    // add items into spinner dynamically
+    public void addItemsOnSpinner() {
+        spinner = (Spinner) findViewById(R.id.denom_spinner);
+        List<String> list = new ArrayList<String>();
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_donation, menu);
-        return true;
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+        list.add("6");
+        list.add("7");
+        list.add("8");
+        list.add("9");
+        list.add("10");
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, list);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    // get the selected dropdown list value
+    public void addListenerOnButton() {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        spinner = (Spinner) findViewById(R.id.denom_spinner);
 
-        return super.onOptionsItemSelected(item);
+        btnDonateNow = (Button) findViewById(R.id.denomDonateButton);
+        btnDonateNow.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                donateAmt.setText("Donation Amount: Rs. " + (10 * Integer.parseInt(String.valueOf(spinner.getSelectedItem()))));
+            }
+
+        });
     }
+
 }
