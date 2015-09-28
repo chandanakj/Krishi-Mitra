@@ -148,7 +148,7 @@
         android:id="@+id/tva12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button"
+        android:layout_above="@+id/donateButton"
         android:layout_toEndOf="@+id/tva8"
         android:layout_toRightOf="@+id/tva8"
         android:paddingBottom="10dp"
