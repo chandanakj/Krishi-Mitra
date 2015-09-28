@@ -36,6 +36,10 @@
             android:name=".FarmerSignInActivity"
             android:label="@string/title_activity_farrmer_sign_in" >
         </activity>
+        <activity
+            android:name=".CardView"
+            android:label="@string/title_activity_card_view" >
+        </activity>
     </application>
 
 </manifest>
