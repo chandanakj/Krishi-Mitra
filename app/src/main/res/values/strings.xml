@@ -7,4 +7,19 @@
     <string name="title_activity_donor_choice">DonorChoiceActivity</string>
     <string name="title_activity_sign_in">SignInActivity</string>
     <string name="title_activity_farrmer_sign_in">FarmerSignInActivity</string>
+    <string name="title_activity_project_info">FarmerSignInActivity</string>
+    <string-array name="numbers">
+        <item>Select Semester</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+
+    </string-array>
+    <string name="title_activity_farmer_choice">FarmerChoiceActivity</string>
+    <string name="title_activity_farmer_request">FarmerRequestActivity</string>
+
+    <string name="title_activity_card_view">DonorHomeActivity</string>
 </resources>

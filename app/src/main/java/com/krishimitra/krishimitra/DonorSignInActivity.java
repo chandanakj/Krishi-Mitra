@@ -15,7 +15,7 @@ Button signin;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donor_sign_in);
-        Intent intent2 = getIntent();
+
 
         signin= (Button) findViewById(R.id.button2);
 
@@ -28,7 +28,7 @@ Button signin;
     @Override
     public void onClick(View v) {
 
-        Intent intent3=new Intent(DonorSignInActivity.this,Project_info.class);
+        Intent intent3=new Intent(DonorSignInActivity.this,CardView.class);
         startActivity(intent3);
 
     }
