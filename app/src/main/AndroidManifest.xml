@@ -16,6 +16,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_signup"></activity>
+        <activity
+            android:name=".DonorChoiceActivity"
+            android:label="@string/title_activity_donor_choice"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.krishimitra.krishimitra.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DonorSignInActivity"
+            android:label="@string/title_activity_sign_in"></activity>
+        <activity
+            android:name=".FarmerSignInActivity"
+            android:label="@string/title_activity_farrmer_sign_in"></activity>
     </application>
 
 </manifest>

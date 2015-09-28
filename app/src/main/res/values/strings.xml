@@ -3,4 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_donor_choice">DonorChoiceActivity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_farrmer_sign_in">FarmerSignInActivity</string>
 </resources>
