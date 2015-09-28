@@ -1,8 +1,7 @@
 package com.krishimitra.krishimitra;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -13,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class DonationActivity extends ActionBarActivity {
+public class DonationActivity extends AppCompatActivity {
 
     Button btnDonateNow;
     Spinner spinner;
@@ -28,14 +27,12 @@ public class DonationActivity extends ActionBarActivity {
 
         addItemsOnSpinner();
         addListenerOnButton();
-
-        Intent intent4 = getIntent();
     }
 
     // add items into spinner dynamically
     public void addItemsOnSpinner() {
         spinner = (Spinner) findViewById(R.id.denom_spinner);
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
 
         list.add("1");
         list.add("2");
@@ -48,7 +45,7 @@ public class DonationActivity extends ActionBarActivity {
         list.add("9");
         list.add("10");
 
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, list);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(dataAdapter);
