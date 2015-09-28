@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/bg"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -18,23 +18,24 @@
 
     <Button
         android:id="@+id/bt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="108dp"
-        android:text="DONOR"
-        android:textSize="30dp" />
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Donor"
+        android:textSize="14dp"
+        android:layout_above="@+id/bt2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/bt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/bt1"
-        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:paddingTop="10dp"
-        android:text="FARMER"
-        android:textSize="30dp" />
+        android:text="Farmer"
+        android:textSize="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
