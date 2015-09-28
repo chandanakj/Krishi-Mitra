@@ -8,9 +8,7 @@ import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-
 public class donation extends ActionBarActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +18,5 @@ public class donation extends ActionBarActivity {
         Intent intent4 = getIntent();
 
     }
-
-
 
 }
