@@ -39,8 +39,21 @@
             android:label="@string/title_activity_project_info"></activity>
 
         <activity
+            android:name=".Project_info"
+            android:label="@string/title_activity_project_info" />
+
+        <activity
             android:name=".donation"
             android:label="@string/title_activity_donation"></activity>
+        
+        <activity
+            android:name=".FarmerChoiceActivity"
+            android:label="@string/title_activity_farmer_choice" >
+        </activity>
+        <activity
+            android:name=".FarmerRequestActivity"
+            android:label="@string/title_activity_farmer_request" >
+        </activity>
     </application>
 
 </manifest>
