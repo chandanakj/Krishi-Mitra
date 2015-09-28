@@ -26,6 +26,7 @@ public class CardView extends AppCompatActivity {
                 .setRightButtonText("Right")
                 .setDescription("Description")
                 .setOnLeftButtonClickListener(new OnButtonClickListener() {
+
                     @Override
                     public void onButtonClicked(View view, Card card) {
                         Intent intent = new Intent(CardView.this,MainActivity.class);
