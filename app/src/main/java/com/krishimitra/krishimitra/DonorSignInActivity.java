@@ -28,7 +28,7 @@ Button signin;
     @Override
     public void onClick(View v) {
 
-        Intent intent3=new Intent(DonorSignInActivity.this,Project_info.class);
+        Intent intent3=new Intent(DonorSignInActivity.this,ProjectInfoActivity.class);
         startActivity(intent3);
 
     }

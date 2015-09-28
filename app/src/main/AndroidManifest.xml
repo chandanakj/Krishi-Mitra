@@ -35,11 +35,11 @@
             android:label="@string/title_activity_farrmer_sign_in"></activity>
 
         <activity
-            android:name=".Project_info"
+            android:name=".ProjectInfoActivity"
             android:label="@string/title_activity_project_info"></activity>
 
         <activity
-            android:name=".donation"
+            android:name=".DonationActivity"
             android:label="@string/title_activity_donation"></activity>
         
         <activity

@@ -18,7 +18,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         donor = (Button) findViewById(R.id.bt1);
-        farmer = (Button) findViewById(R.id.bt2);
+        farmer = (Button) findViewById(R.id.bt5);
 
         donor.setOnClickListener(this);
         farmer.setOnClickListener(this);
@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         if (v.getId() == R.id.bt1) {
             Intent intent1 = new Intent(MainActivity.this, DonorChoiceActivity.class);
             startActivity(intent1);
-        } else if (v.getId() == R.id.bt2) {
+        } else if (v.getId() == R.id.bt5) {
             Intent intent1 = new Intent(MainActivity.this, FarmerSignInActivity.class);
             startActivity(intent1);
         }
