@@ -17,14 +17,16 @@ public class CardView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_view);
+
         MaterialListView mListView = (MaterialListView) findViewById(R.id.material_listview);
+
         Card card = new Card.Builder(this)
                 .setTag("CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
-                .setTitle("Title")
-                .setLeftButtonText("info")
-                .setRightButtonText("Donate")
-                .setDescription("Description")
+                .setTitle("Project Number #1")
+                .setLeftButtonText("Project Info")
+                .setRightButtonText("Donate Now")
+                .setDescription("This is a sample description of the project at hand!")
                 .setOnLeftButtonClickListener(new OnButtonClickListener() {
 
                     @Override
@@ -36,30 +38,20 @@ public class CardView extends AppCompatActivity {
                 .setOnRightButtonClickListener(new OnButtonClickListener(){
                     @Override
                     public void onButtonClicked(View view, Card card) {
-                        Intent intent1 = new Intent(CardView.this, DonationActivity.class);
-                        startActivity(intent1);
+                        Intent intent = new Intent(CardView.this, DonationActivity.class);
+                        startActivity(intent);
                     }
                 })
 
                 .endConfig()
                 .build();
-        for(int i=0;i<8;i++)
-         {
-             mListView.add(card);
-         }
 
-        mListView.addOnItemTouchListener(new RecyclerItemClickListener.OnItemClickListener() {
+        mListView.add(card);
+        mListView.add(card);
+        mListView.add(card);
+        mListView.add(card);
+        mListView.add(card);
 
-            @Override
-            public void onItemClick(Card card, int position) {
-
-            }
-
-            @Override
-            public void onItemLongClick(Card card, int position) {
-
-            }
-        });
     }
 
 

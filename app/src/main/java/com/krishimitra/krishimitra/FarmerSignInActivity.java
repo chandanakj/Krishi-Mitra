@@ -8,15 +8,15 @@ import android.widget.Button;
 
 
 public class FarmerSignInActivity extends AppCompatActivity implements View.OnClickListener {
-    Button signin;
+    Button btnSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_farmer_sign_in);
 
-        signin= (Button) findViewById(R.id.signin);
-        signin.setOnClickListener(this);
+        btnSignIn = (Button) findViewById(R.id.signin);
+        btnSignIn.setOnClickListener(this);
     }
 
     @Override

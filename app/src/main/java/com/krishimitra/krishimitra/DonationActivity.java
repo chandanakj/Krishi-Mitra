@@ -29,7 +29,6 @@ public class DonationActivity extends AppCompatActivity {
         addListenerOnButton();
     }
 
-    // add items into spinner dynamically
     public void addItemsOnSpinner() {
         spinner = (Spinner) findViewById(R.id.denom_spinner);
         List<String> list = new ArrayList<>();
@@ -52,7 +51,6 @@ public class DonationActivity extends AppCompatActivity {
 
     }
 
-    // get the selected dropdown list value
     public void addListenerOnButton() {
         spinner = (Spinner) findViewById(R.id.denom_spinner);
 

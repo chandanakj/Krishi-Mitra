@@ -17,15 +17,51 @@ public class FarmerRequestActivity extends AppCompatActivity {
 
         MaterialListView mListView = (MaterialListView) findViewById(R.id.material_listview);
 
-        Card card = new Card.Builder(this)
+        Card cardFertilizers = new Card.Builder(this)
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
-                .setTitle("I'm new")
-                .setDescription("I've been generated on runtime!")
+                .setTitle("Fertilizers")
                 .endConfig()
                 .build();
 
-        mListView.add(card);
+        mListView.add(cardFertilizers);
+
+        Card cardSeeds = new Card.Builder(this)
+                .setTag("BASIC_IMAGE_BUTTONS_CARD")
+                .withProvider(BasicImageButtonsCardProvider.class)
+                .setTitle("Seeds")
+                .endConfig()
+                .build();
+
+        mListView.add(cardSeeds);
+
+
+        Card cardTools = new Card.Builder(this)
+                .setTag("BASIC_IMAGE_BUTTONS_CARD")
+                .withProvider(BasicImageButtonsCardProvider.class)
+                .setTitle("Tools")
+                .endConfig()
+                .build();
+
+        mListView.add(cardTools);
+
+        Card cardWater = new Card.Builder(this)
+                .setTag("BASIC_IMAGE_BUTTONS_CARD")
+                .withProvider(BasicImageButtonsCardProvider.class)
+                .setTitle("Water Can")
+                .endConfig()
+                .build();
+
+        mListView.add(cardWater);
+
+        Card cardMachinery = new Card.Builder(this)
+                .setTag("BASIC_IMAGE_BUTTONS_CARD")
+                .withProvider(BasicImageButtonsCardProvider.class)
+                .setTitle("Machinery")
+                .endConfig()
+                .build();
+
+        mListView.add(cardMachinery);
     }
 
 }
