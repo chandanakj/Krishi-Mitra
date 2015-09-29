@@ -22,17 +22,25 @@ public class CardView extends AppCompatActivity {
                 .setTag("CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
                 .setTitle("Title")
-                .setLeftButtonText("Left")
-                .setRightButtonText("Right")
+                .setLeftButtonText("info")
+                .setRightButtonText("Donate")
                 .setDescription("Description")
                 .setOnLeftButtonClickListener(new OnButtonClickListener() {
 
                     @Override
                     public void onButtonClicked(View view, Card card) {
-                        Intent intent = new Intent(CardView.this,MainActivity.class);
+                        Intent intent = new Intent(CardView.this, ProjectInfoActivity.class);
                         startActivity(intent);
                     }
                 })
+                .setOnRightButtonClickListener(new OnButtonClickListener(){
+                    @Override
+                    public void onButtonClicked(View view, Card card) {
+                        Intent intent1 = new Intent(CardView.this, DonationActivity.class);
+                        startActivity(intent1);
+                    }
+                })
+
                 .endConfig()
                 .build();
         for(int i=0;i<8;i++)

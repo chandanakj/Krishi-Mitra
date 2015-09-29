@@ -19,6 +19,8 @@ public class DonorChoiceActivity extends AppCompatActivity implements View.OnCli
         btn1 = (Button) findViewById(R.id.DonorSignUpButton);
         btn2 = (Button) findViewById(R.id.DonorSignInButton);
 
+        btn1.setTransformationMethod(null);
+
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
     }

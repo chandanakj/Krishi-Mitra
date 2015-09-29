@@ -27,7 +27,7 @@ public class DonorSignInActivity extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View v) {
 
-        Intent intent=new Intent(DonorSignInActivity.this,ProjectInfoActivity.class);
+        Intent intent=new Intent(DonorSignInActivity.this,CardView.class);
         startActivity(intent);
 
     }
