@@ -19,7 +19,6 @@ public class FarmerRequestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_farmer_request);
 
-
         MaterialListView mListView = (MaterialListView) findViewById(R.id.material_listview);
 
         Card cardFertilizers = new Card.Builder(this)
