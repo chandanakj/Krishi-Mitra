@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class FarmerChoiceActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button request,check;
+    Button request, check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +20,17 @@ public class FarmerChoiceActivity extends AppCompatActivity implements View.OnCl
         check= (Button) findViewById(R.id.check);
 
         request.setOnClickListener(this);
+        check.setOnClickListener(this);
     }
-
 
     @Override
     public void onClick(View v) {
-
-            Intent intent=new Intent(FarmerChoiceActivity.this,FarmerRequestActivity.class);
+        if (v.getId() == R.id.request) {
+            Intent intent = new Intent(FarmerChoiceActivity.this, FarmerRequestActivity.class);
             startActivity(intent);
-
+        } else if (v.getId() == R.id.check) {
+            Intent intent = new Intent(FarmerChoiceActivity.this, FarmerCheckProjectsActivity.class);
+            startActivity(intent);
+        }
     }
 }
