@@ -48,6 +48,9 @@
         <activity
             android:name=".FarmerCheckProjectsActivity"
             android:label="@string/title_activity_farmer_check_projects" />
+        <activity
+            android:name=".FarmerItemRequestActivity"
+            android:label="@string/title_activity_farmer_item_request" />
     </application>
 
 </manifest>
