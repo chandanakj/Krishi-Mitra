@@ -8,6 +8,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.krishimitra.krishimitra.DonorChoiceActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.6"/>
     <Button
         android:id="@+id/DonorSignInButton"
         android:layout_width="match_parent"
@@ -15,6 +22,7 @@
         android:layout_above="@+id/DonorSignUpButton"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:alpha="0.8"
         android:text="Sign In"
         android:textSize="14dp" />
 
@@ -25,7 +33,9 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:text="Sign Up"
+
+        android:alpha="0.8"
+        android:text="SIGN UP"
         android:textSize="14dp" />
 
     <TextView
