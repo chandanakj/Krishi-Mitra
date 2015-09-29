@@ -97,8 +97,8 @@ public class CardView extends AppCompatActivity {
                                         "Product Name:  Rat Killer\n\n" +
                                         "Quantity:      1 litre\n\n" +
                                         "FARMER INFORMATION:\n" +
-                                        "Name:          Ramalinga Swamy\n\n" +
-                                        "City:          Gulbarga\n\n" +
+                                        "Name:          Keval\n\n" +
+                                        "City:          Bangalore\n\n" +
                                         "Contact:       +91 91231 23123\n\n\n" +
                                         "\t\tARE YOU UP FOR DONATION?");
                         builder.setNegativeButton("YES", new DialogInterface.OnClickListener() {
@@ -149,8 +149,8 @@ public class CardView extends AppCompatActivity {
                                         "Product Name:  Wooden Plough\n\n" +
                                         "Quantity:      1 pc\n\n" +
                                         "FARMER INFORMATION:\n" +
-                                        "Name:          Ramalinga Swamy\n\n" +
-                                        "City:          Gulbarga\n\n" +
+                                        "Name:          Awneesh Kishore\n\n" +
+                                        "City:          Bihar\n\n" +
                                         "Contact:       +91 91231 23123\n\n\n" +
                                         "\t\tARE YOU UP FOR DONATION?");
                         builder.setNegativeButton("YES", new DialogInterface.OnClickListener() {
@@ -201,8 +201,8 @@ public class CardView extends AppCompatActivity {
                                         "Product Name:  Mechanical Plough\n\n" +
                                         "Quantity:      1 pc\n\n" +
                                         "FARMER INFORMATION:\n" +
-                                        "Name:          Ramalinga Swamy\n\n" +
-                                        "City:          Gulbarga\n\n" +
+                                        "Name:          Abhayanna Dixit\n\n" +
+                                        "City:          Hassan\n\n" +
                                         "Contact:       +91 91231 23123\n\n\n" +
                                         "\t\tARE YOU UP FOR DONATION?");
                         builder.setNegativeButton("YES", new DialogInterface.OnClickListener() {
