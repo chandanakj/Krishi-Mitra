@@ -7,6 +7,7 @@ import com.dexafree.materialList.card.Card;
 import com.dexafree.materialList.card.provider.BasicImageButtonsCardProvider;
 import com.dexafree.materialList.view.MaterialListView;
 
+// Comment
 
 public class FarmerRequestActivity extends AppCompatActivity {
 
