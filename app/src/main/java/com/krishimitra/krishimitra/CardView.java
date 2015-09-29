@@ -24,7 +24,7 @@ public class CardView extends AppCompatActivity {
                 .withProvider(BasicImageButtonsCardProvider.class)
                 .setTitle("Title")
                 .setLeftButtonText("More Details")
-                .setRightButtonText("Donate")
+                .setRightButtonText("Donate Now")
                 .setDrawable(R.mipmap.ic_launcher)
                 .setDescription("Description")
                 .setOnLeftButtonClickListener(new OnButtonClickListener() {
