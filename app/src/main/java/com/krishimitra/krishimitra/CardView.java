@@ -25,7 +25,7 @@ public class CardView extends AppCompatActivity {
                 .setTitle("Title")
                 .setLeftButtonText("More Details")
                 .setRightButtonText("Donate Now")
-                .setDrawable(R.mipmap.ic_launcher)
+                .setDrawable(R.drawable.ic_launcher)
                 .setDescription("Description")
                 .setOnLeftButtonClickListener(new OnButtonClickListener() {
 
@@ -57,8 +57,8 @@ public class CardView extends AppCompatActivity {
                 .setOnRightButtonClickListener(new OnButtonClickListener() {
                     @Override
                     public void onButtonClicked(View view, Card card) {
-                        Intent intent1 = new Intent(CardView.this, DonationActivity.class);
-                        startActivity(intent1);
+                        Intent intent = new Intent(CardView.this, DonationActivity.class);
+                        startActivity(intent);
                     }
                 })
 
