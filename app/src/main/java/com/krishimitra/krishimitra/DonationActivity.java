@@ -33,7 +33,7 @@ public class DonationActivity extends AppCompatActivity {
     public void addItemsOnSpinner() {
         spinner = (Spinner) findViewById(R.id.denom_spinner);
         List<String> list = new ArrayList<>();
-
+        list.add("Select a number");
         list.add("1");
         list.add("2");
         list.add("3");
