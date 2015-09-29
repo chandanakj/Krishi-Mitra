@@ -67,13 +67,6 @@ public class CardView extends AppCompatActivity {
         for (int i = 0; i < 8; i++) {
             mListView.add(card);
         }
-        AlertDialog.Builder builder =
-                new AlertDialog.Builder(CardView.this, R.style.AppCompatAlertDialogStyle);
-        builder.setTitle("SCRUM");
-        builder.setMessage("In the SCRUM methodology a sprint is the basic unit of development. Each sprint is preceded by a planning meeting, where the tasks for the sprint are identified and an estimated commitment for the sprint goal is made, and followed by a review or retrospective meeting where the progress is reviewed and lessons for the next sprint are identified. During each sprint, the team creates finished portions of a product.....");
-        builder.setPositiveButton("OK", null);//second parameter used for onclicklistener
-        builder.setNegativeButton("Cancel", null);
-        builder.show();
     }
 
 
