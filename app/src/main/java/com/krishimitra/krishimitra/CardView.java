@@ -1,14 +1,15 @@
 package com.krishimitra.krishimitra;
 
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.dexafree.materialList.card.Card;
 import com.dexafree.materialList.card.OnButtonClickListener;
 import com.dexafree.materialList.card.provider.BasicImageButtonsCardProvider;
-import com.dexafree.materialList.listeners.RecyclerItemClickListener;
 import com.dexafree.materialList.view.MaterialListView;
 
 public class CardView extends AppCompatActivity {
@@ -17,41 +18,61 @@ public class CardView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_view);
-
         MaterialListView mListView = (MaterialListView) findViewById(R.id.material_listview);
-
         Card card = new Card.Builder(this)
                 .setTag("CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
-                .setTitle("Project Number #1")
-                .setLeftButtonText("Project Info")
-                .setRightButtonText("Donate Now")
-                .setDescription("This is a sample description of the project at hand!")
+                .setTitle("Title")
+                .setLeftButtonText("More Details")
+                .setRightButtonText("Donate")
+                .setDescription("Description")
                 .setOnLeftButtonClickListener(new OnButtonClickListener() {
 
                     @Override
                     public void onButtonClicked(View view, Card card) {
-                        Intent intent = new Intent(CardView.this, ProjectInfoActivity.class);
-                        startActivity(intent);
+
+                        AlertDialog.Builder builder =
+                                new AlertDialog.Builder(CardView.this, R.style.AppCompatAlertDialogStyle);
+                        builder.setTitle("Details");
+                        builder.setMessage("Product Type:  Fertilizer\n\n" +
+                                "Product Name: Urea\n\n" +
+                                "Quantity:       5kgs\n\n" +
+                                "FARMER INFORMATION:\n" +
+                                "Name:  Ramalinga Swamy\n\n" +
+                                "City:  Gulbarga\n\n" +
+                                "Contact: 9123123123\n\n\n" +
+                                "\t\tARE YOU UP FOR DONATION?");
+                        builder.setNegativeButton("YES", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                Intent intent = new Intent(CardView.this, DonationActivity.class);
+                                startActivity(intent);
+                            }
+                        });//second parameter used for onclicklistener
+                        builder.setPositiveButton("Cancel", null);
+                        builder.show();
                     }
                 })
-                .setOnRightButtonClickListener(new OnButtonClickListener(){
+                .setOnRightButtonClickListener(new OnButtonClickListener() {
                     @Override
                     public void onButtonClicked(View view, Card card) {
-                        Intent intent = new Intent(CardView.this, DonationActivity.class);
-                        startActivity(intent);
+                        Intent intent1 = new Intent(CardView.this, DonationActivity.class);
+                        startActivity(intent1);
                     }
                 })
 
                 .endConfig()
                 .build();
-
-        mListView.add(card);
-        mListView.add(card);
-        mListView.add(card);
-        mListView.add(card);
-        mListView.add(card);
-
+        for (int i = 0; i < 8; i++) {
+            mListView.add(card);
+        }
+        AlertDialog.Builder builder =
+                new AlertDialog.Builder(CardView.this, R.style.AppCompatAlertDialogStyle);
+        builder.setTitle("SCRUM");
+        builder.setMessage("In the SCRUM methodology a sprint is the basic unit of development. Each sprint is preceded by a planning meeting, where the tasks for the sprint are identified and an estimated commitment for the sprint goal is made, and followed by a review or retrospective meeting where the progress is reviewed and lessons for the next sprint are identified. During each sprint, the team creates finished portions of a product.....");
+        builder.setPositiveButton("OK", null);//second parameter used for onclicklistener
+        builder.setNegativeButton("Cancel", null);
+        builder.show();
     }
 
 

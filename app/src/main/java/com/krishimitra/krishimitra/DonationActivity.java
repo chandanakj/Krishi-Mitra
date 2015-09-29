@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +60,9 @@ public class DonationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 donateAmt.setText("Donation Amount: Rs. " + (10 * Integer.parseInt(String.valueOf(spinner.getSelectedItem()))));
+                Toast.makeText(getApplicationContext(),"You have successfully donated",
+                        Toast.LENGTH_LONG).show();
+
             }
         });
     }
