@@ -22,6 +22,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
                 .setTitle("Fertilizers")
+                .setDrawable(R.mipmap.ic_launcher)
                 .endConfig()
                 .build();
 
@@ -31,6 +32,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
                 .setTitle("Seeds")
+                .setDrawable(R.mipmap.ic_launcher)
                 .endConfig()
                 .build();
 
@@ -41,6 +43,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
                 .setTitle("Tools")
+                .setDrawable(R.mipmap.ic_launcher)
                 .endConfig()
                 .build();
 
@@ -49,6 +52,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
         Card cardWater = new Card.Builder(this)
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
+                .setDrawable(R.mipmap.ic_launcher)
                 .setTitle("Water Can")
                 .endConfig()
                 .build();
@@ -58,6 +62,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
         Card cardMachinery = new Card.Builder(this)
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
+                .setDrawable(R.mipmap.ic_launcher)
                 .setTitle("Machinery")
                 .endConfig()
                 .build();
