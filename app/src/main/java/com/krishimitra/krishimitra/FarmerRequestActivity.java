@@ -24,7 +24,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
         Card cardFertilizers = new Card.Builder(this)
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
-                .setTitle("Fertilizers")
+                .setTitle("Fertilizers/ಗೊಬ್ರ")
                 .setDrawable(R.drawable.fertilizers)
                 .setRightButtonText("Need")
                 .setOnRightButtonClickListener(new OnButtonClickListener() {
@@ -42,7 +42,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
         Card cardSeeds = new Card.Builder(this)
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
-                .setTitle("Seeds")
+                .setTitle("Seeds/ಬೀಜ ")
                 .setDrawable(R.drawable.seeds)
                 .setRightButtonText("Need")
                 .setOnRightButtonClickListener(new OnButtonClickListener() {
@@ -61,7 +61,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
         Card cardTools = new Card.Builder(this)
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
-                .setTitle("Tools")
+                .setTitle("Tools/ಆಯುಧ ")
                 .setDrawable(R.drawable.plough)
                 .setRightButtonText("Need")
                 .setOnRightButtonClickListener(new OnButtonClickListener() {
@@ -80,7 +80,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
                 .setDrawable(R.drawable.pesticides)
-                .setTitle("Pesticides")
+                .setTitle("Pesticides/ಕೀಟನಾಶಕಗಳು ")
                 .setRightButtonText("Need")
                 .setOnRightButtonClickListener(new OnButtonClickListener() {
                     @Override
@@ -98,7 +98,7 @@ public class FarmerRequestActivity extends AppCompatActivity {
                 .setTag("BASIC_IMAGE_BUTTONS_CARD")
                 .withProvider(BasicImageButtonsCardProvider.class)
                 .setDrawable(R.drawable.ploughtractor)
-                .setTitle("Machinery")
+                .setTitle("Machinery/ಯಂತ್ರಗಳು")
                 .setRightButtonText("Need")
                 .setOnRightButtonClickListener(new OnButtonClickListener() {
                     @Override
