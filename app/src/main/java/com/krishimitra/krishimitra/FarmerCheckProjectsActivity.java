@@ -2,6 +2,7 @@ package com.krishimitra.krishimitra;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ProgressBar;
 
 import com.dexafree.materialList.card.Card;
 import com.dexafree.materialList.card.provider.BasicButtonsCardProvider;
@@ -9,7 +10,7 @@ import com.dexafree.materialList.view.MaterialListView;
 
 
 public class FarmerCheckProjectsActivity extends AppCompatActivity {
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
