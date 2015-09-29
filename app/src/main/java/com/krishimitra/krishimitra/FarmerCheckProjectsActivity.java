@@ -38,4 +38,5 @@ public class FarmerCheckProjectsActivity extends AppCompatActivity {
         mListView.add(cardB);
     }
 
+
 }
